@@ -12,7 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var ytcl = YoutubePlayerController(
-      initialVideoId: "CkcvVZZEsJE",
+      initialVideoId: "1GIDtjBGXe4",
+      params: const YoutubePlayerParams(
+        startAt: Duration(seconds: 0),
+        showControls: true,
+        showFullscreenButton: true,
+      ),
     );
 
     return MaterialApp(
